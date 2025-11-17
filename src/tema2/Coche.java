@@ -13,9 +13,7 @@ public class Coche {
 		}
 	
 	public void avanzar() {};
-	public void parar() {};
-	public void girarizquierda() {};
-	public void girarDerecha() {}
+
 
 	public String getColor() {
 		return color;
@@ -45,6 +43,7 @@ public class Coche {
 	public String toString() {
 		return ("mi coche es color "+color+", una velocidad de "+velocidad+"km y un tamaño de "+tamaño+"m");
 	}
+
 
 
 
