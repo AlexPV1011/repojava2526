@@ -1,0 +1,28 @@
+package pio.daw.SP.ProyMaven;
+
+public class pruebaTest {
+	
+
+
+	    public static void main(String[] args) {
+
+	        String htmlDemo = """
+	                <html>
+	                    <head><title>Prueba</title></head>
+	                    <body>
+	                        <h1>Hola</h1>
+	                        <p>Esta tarea esta hecha con Jsoup</p>
+	                    </body>
+	                </html>
+	                """;
+
+	        prueba parser = new prueba(htmlDemo);   
+		        System.out.println("Título:");
+		        System.out.println(parser.getTitle());
+		        System.out.println("Texto:");
+		        System.out.println(parser.getText());
+	    }
+	}
+
+
+
