@@ -1,0 +1,25 @@
+package pio.daw.SP.ProyMaven;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
+public class prueba {
+
+    private String html;
+
+    public prueba(String html) {
+        this.html = html;
+    }
+
+
+    public String getText() {
+        Document doc = Jsoup.parse(html);
+        return doc.text();
+    }
+
+
+    public String getTitle() {
+        Document doc = Jsoup.parse(html);
+        return doc.title();
+    }
+}
